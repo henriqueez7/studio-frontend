@@ -1,0 +1,29 @@
+.product-summary-card {
+  border-radius: 28px;
+  border: 1px solid #e2e8f0;
+  background: #eef2f7;
+  padding: 1.5rem;
+  box-shadow: 0 16px 36px rgba(56, 65, 84, 0.06);
+}
+
+.product-summary-card__title {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #6d4cad;
+}
+
+.product-summary-card__value {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.product-summary-card__description {
+  margin-top: 0.5rem;
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  color: #64748b;
+}

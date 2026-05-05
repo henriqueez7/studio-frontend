@@ -1,0 +1,56 @@
+.product-filter {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 1280px) {
+  .product-filter {
+    grid-template-columns: 1fr 220px;
+  }
+}
+
+.product-filter__field {
+  border-radius: 32px;
+  border: 1px solid #e2e8f0;
+  background: #eef2f7;
+  padding: 1.25rem;
+}
+
+.product-filter__label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #334155;
+}
+
+.product-filter__input,
+.product-filter__select {
+  margin-top: 0.75rem;
+  width: 100%;
+  border-radius: 24px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  padding: 0.75rem 1rem;
+  font-size: 0.9375rem;
+  color: #0f172a;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.product-filter__input::placeholder {
+  color: #94a3b8;
+}
+
+.product-filter__input:focus,
+.product-filter__select:focus {
+  border-color: rgba(109, 76, 173, 0.35);
+  box-shadow: 0 0 0 4px rgba(109, 76, 173, 0.1);
+}
+
+.product-filter__select {
+  appearance: none;
+  cursor: pointer;
+}

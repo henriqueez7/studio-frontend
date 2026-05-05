@@ -1,0 +1,312 @@
+.loginPage {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow: hidden;
+  padding: 1.5rem;
+  background:
+    radial-gradient(circle at top right, rgba(109, 76, 173, 0.08), transparent 20%),
+    linear-gradient(180deg, #f8fbff 0%, #f1f5fb 100%);
+  color: #111827;
+}
+
+.loginBackgroundGlow {
+  position: absolute;
+  inset: auto auto -8rem -8rem;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(109, 76, 173, 0.08), transparent 72%);
+  filter: blur(14px);
+  pointer-events: none;
+}
+
+.loginGrid {
+  position: relative;
+  z-index: 1;
+  min-height: calc(100vh - 3rem);
+  min-height: calc(100dvh - 3rem);
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+}
+
+.loginCard {
+  width: min(100%, 32rem);
+  border-radius: 2rem;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  background: rgba(255, 255, 255, 0.94);
+  padding: clamp(1.5rem, 2vw, 2.25rem);
+  box-shadow: 0 24px 60px rgba(52, 60, 78, 0.1);
+}
+
+.loginBrand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto 1rem;
+}
+
+.loginBrandImage {
+  width: 7rem;
+  height: auto;
+  object-fit: contain;
+}
+
+.loginCardHeader {
+  display: grid;
+  gap: 0.4rem;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+.loginCardEyebrow {
+  margin: 0;
+  color: #6d4cad;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.loginCardTitle,
+.loginCardSubtitle,
+.loginFooter {
+  margin: 0;
+}
+
+.loginForm {
+  display: grid;
+  gap: 1.1rem;
+}
+
+.loginField {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.loginFieldLabel {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #334155;
+}
+
+.loginInput {
+  width: 100%;
+  border-radius: 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  background: #f8fbff;
+  padding: 0.95rem 1rem;
+  color: #111827;
+  outline: none;
+  transition:
+    border-color 0.22s ease,
+    box-shadow 0.22s ease,
+    background-color 0.22s ease;
+}
+
+.loginInput::placeholder {
+  color: rgba(100, 116, 139, 0.72);
+}
+
+.loginInput:focus {
+  border-color: rgba(109, 76, 173, 0.38);
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(109, 76, 173, 0.1);
+}
+
+.loginInput:-webkit-autofill,
+.loginInput:-webkit-autofill:hover,
+.loginInput:-webkit-autofill:focus,
+.loginInput:-webkit-autofill:active {
+  -webkit-text-fill-color: #111827;
+  caret-color: #111827;
+  -webkit-box-shadow: 0 0 0 1000px #f8fbff inset;
+  box-shadow: 0 0 0 1000px #f8fbff inset;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+.loginFieldError {
+  min-height: 1rem;
+  font-size: 0.82rem;
+  color: #dc2626;
+}
+
+.loginFieldHint {
+  margin-top: -0.15rem;
+  font-size: 0.78rem;
+  color: #64748b;
+}
+
+.loginError {
+  border-radius: 1rem;
+  border: 1px solid rgba(248, 113, 113, 0.22);
+  background: rgba(254, 242, 242, 0.96);
+  padding: 0.95rem 1rem;
+  color: #991b1b;
+}
+
+.loginButton {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  margin-top: 0.35rem;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #6d4cad 0%, #7c5ad4 100%);
+  color: #ffffff;
+  padding: 0.95rem 1rem;
+  font-size: 0.94rem;
+  font-weight: 800;
+  box-shadow: 0 16px 36px rgba(109, 76, 173, 0.22);
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    opacity 0.22s ease,
+    filter 0.22s ease;
+}
+
+.loginGoogleButton {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 0.1rem;
+  border: 1px solid rgba(109, 76, 173, 0.18);
+  border-radius: 999px;
+  background: linear-gradient(180deg, #ffffff 0%, #fbf9ff 100%);
+  color: #43385f;
+  padding: 1rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 800;
+  box-shadow: 0 12px 28px rgba(109, 76, 173, 0.12);
+  transition:
+    transform 0.22s ease,
+    border-color 0.22s ease,
+    color 0.22s ease,
+    background-color 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.loginGoogleButton:hover {
+  transform: translateY(-1px);
+  border-color: rgba(109, 76, 173, 0.3);
+  color: #6d4cad;
+  background: linear-gradient(180deg, #ffffff 0%, #f7f2ff 100%);
+  box-shadow: 0 18px 34px rgba(109, 76, 173, 0.16);
+}
+
+.loginGoogleIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  flex: 0 0 1.25rem;
+}
+
+.loginGoogleIcon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.loginButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 20px 42px rgba(109, 76, 173, 0.28);
+  filter: brightness(1.03);
+}
+
+.loginButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.loginIcon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.loginFooter {
+  margin-top: 1.35rem;
+  text-align: center;
+  font-size: 0.92rem;
+}
+
+.loginFooterLink {
+  font-weight: 700;
+  color: #6d4cad;
+}
+
+.loginFooterLink:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .loginPage {
+    padding: 0.5rem 0.7rem 0.7rem;
+    overflow-y: auto;
+  }
+
+  .loginGrid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 1.2rem);
+    min-height: calc(100dvh - 1.2rem);
+    padding: 0.35rem 0;
+  }
+
+  .loginCard {
+    width: min(100%, 29rem);
+    border-radius: 1.35rem;
+    padding: 1.05rem;
+  }
+
+  .loginBrandImage {
+    width: 5.25rem;
+  }
+
+  .loginBrand {
+    margin-bottom: 0.75rem;
+  }
+
+  .loginCardHeader {
+    margin-bottom: 0.9rem;
+  }
+
+  .loginCardEyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+  }
+
+  .loginForm {
+    gap: 0.8rem;
+  }
+
+  .loginField {
+    gap: 0.45rem;
+  }
+
+  .loginInput {
+    padding: 0.82rem 0.95rem;
+  }
+
+  .loginButton,
+  .loginGoogleButton {
+    padding: 0.82rem 0.95rem;
+  }
+
+  .loginFooter {
+    margin-top: 0.95rem;
+    font-size: 0.88rem;
+  }
+}
