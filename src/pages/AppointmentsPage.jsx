@@ -571,8 +571,8 @@ function AppointmentComposerModal({
                     ) : null}
                   </div>
 
-                  <div className="grid gap-3 border-t border-slate-200 pt-5 md:grid-cols-3">
-                    <label className="grid gap-2 text-sm font-medium text-slate-700">
+                  <div className="grid gap-4 border-t border-slate-200 pt-5 md:grid-cols-[minmax(0,0.85fr)_minmax(0,1fr)_minmax(0,1fr)]">
+                    <label className="grid min-w-0 gap-2 text-sm font-medium text-slate-700">
                       Data
                       <div className="relative">
                         <input
@@ -601,7 +601,7 @@ function AppointmentComposerModal({
                               }
                             }
                           }}
-                          className="flex h-11 w-full items-center justify-between rounded-xl border border-slate-200 bg-white px-4 text-left text-slate-900 outline-none transition hover:border-[#6d4cad]/35 focus:border-[#6d4cad]/35 focus:ring-2 focus:ring-[#6d4cad]/10"
+                          className="flex h-11 w-full min-w-0 items-center justify-between rounded-xl border border-slate-200 bg-white px-4 text-left text-slate-900 outline-none transition hover:border-[#6d4cad]/35 focus:border-[#6d4cad]/35 focus:ring-2 focus:ring-[#6d4cad]/10"
                           aria-label="Abrir calendario"
                         >
                           <span className={composer.date ? "text-slate-900" : "text-slate-400"}>
@@ -612,7 +612,7 @@ function AppointmentComposerModal({
                       </div>
                     </label>
 
-                    <label className="grid gap-2 text-sm font-medium text-slate-700">
+                    <label className="grid min-w-0 gap-2 text-sm font-medium text-slate-700">
                       Horario
                       <select
                         value={composer.time}
@@ -620,7 +620,7 @@ function AppointmentComposerModal({
                           setComposer((current) => ({ ...current, time: event.target.value }))
                         }
                         disabled={!canLoadTimes || loadingTimes}
-                        className="h-11 rounded-xl border border-slate-200 bg-white px-4 text-slate-900 outline-none transition focus:border-[#6d4cad]/35 focus:ring-2 focus:ring-[#6d4cad]/10 disabled:bg-slate-50"
+                        className="h-11 w-full min-w-0 rounded-xl border border-slate-200 bg-white px-4 text-slate-900 outline-none transition focus:border-[#6d4cad]/35 focus:ring-2 focus:ring-[#6d4cad]/10 disabled:bg-slate-50"
                       >
                         <option value="">{timePlaceholder}</option>
                         {timeOptions.map((time) => (
@@ -631,7 +631,7 @@ function AppointmentComposerModal({
                       </select>
                     </label>
 
-                    <label className="grid gap-2 text-sm font-medium text-slate-700">
+                    <label className="grid min-w-0 gap-2 text-sm font-medium text-slate-700">
                       Profissional
                       <select
                         value={composer.barberId}
@@ -644,7 +644,7 @@ function AppointmentComposerModal({
                           }))
                         }
                         disabled={isBarber}
-                        className="h-11 rounded-xl border border-slate-200 bg-white px-4 text-slate-900 outline-none transition focus:border-[#6d4cad]/35 focus:ring-2 focus:ring-[#6d4cad]/10 disabled:bg-slate-50"
+                        className="h-11 w-full min-w-0 rounded-xl border border-slate-200 bg-white px-4 text-slate-900 outline-none transition focus:border-[#6d4cad]/35 focus:ring-2 focus:ring-[#6d4cad]/10 disabled:bg-slate-50"
                       >
                         <option value="">Selecione o profissional</option>
                         {barbers.map((barber) => (
