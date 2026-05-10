@@ -408,6 +408,8 @@ export default function AgendarPage() {
                           shouldValidate: true,
                           shouldDirty: true,
                         });
+                        setDatesExpanded(false);
+                        setTimesExpanded(true);
                         clearError();
                         clearSuccess();
                       }}
