@@ -2,11 +2,11 @@
   position: relative;
   min-height: 100vh;
   min-height: 100dvh;
-  overflow: hidden;
-  padding: 1.5rem;
+  overflow-y: auto;
+  padding: 2rem 1.5rem;
   background:
-    radial-gradient(circle at top right, rgba(109, 76, 173, 0.08), transparent 20%),
-    linear-gradient(180deg, #f8fbff 0%, #f1f5fb 100%);
+    radial-gradient(circle at 50% 0%, rgba(109, 76, 173, 0.1), transparent 24rem),
+    linear-gradient(180deg, #fbfdff 0%, #f1f5fb 100%);
   color: #111827;
 }
 
@@ -24,22 +24,18 @@
 .loginGrid {
   position: relative;
   z-index: 1;
-  min-height: calc(100vh - 3rem);
-  min-height: calc(100dvh - 3rem);
+  min-height: calc(100vh - 4rem);
+  min-height: calc(100dvh - 4rem);
   width: 100%;
-  max-width: 1100px;
+  max-width: 40rem;
   margin: 0 auto;
   display: grid;
   place-items: center;
 }
 
 .loginCard {
-  width: min(100%, 32rem);
-  border-radius: 2rem;
-  border: 1px solid rgba(148, 163, 184, 0.2);
-  background: rgba(255, 255, 255, 0.94);
-  padding: clamp(1.5rem, 2vw, 2.25rem);
-  box-shadow: 0 24px 60px rgba(52, 60, 78, 0.1);
+  width: min(100%, 35rem);
+  padding: clamp(1rem, 2vw, 1.5rem);
 }
 
 .loginBrand {
@@ -47,11 +43,11 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin: 0 auto 1rem;
+  margin: 0 auto 1.25rem;
 }
 
 .loginBrandImage {
-  width: 7rem;
+  width: 7.75rem;
   height: auto;
   object-fit: contain;
 }
@@ -80,7 +76,7 @@
 
 .loginForm {
   display: grid;
-  gap: 1.1rem;
+  gap: 1rem;
 }
 
 .loginField {
@@ -96,12 +92,13 @@
 
 .loginInput {
   width: 100%;
-  border-radius: 1rem;
+  border-radius: 1.15rem;
   border: 1px solid rgba(148, 163, 184, 0.2);
-  background: #f8fbff;
-  padding: 0.95rem 1rem;
+  background: rgba(255, 255, 255, 0.78);
+  padding: 1rem 1.05rem;
   color: #111827;
   outline: none;
+  box-shadow: 0 14px 36px rgba(52, 60, 78, 0.06);
   transition:
     border-color 0.22s ease,
     box-shadow 0.22s ease,
@@ -114,7 +111,7 @@
 
 .loginInput:focus {
   border-color: rgba(109, 76, 173, 0.38);
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.98);
   box-shadow: 0 0 0 4px rgba(109, 76, 173, 0.1);
 }
 
@@ -148,6 +145,7 @@
   background: rgba(254, 242, 242, 0.96);
   padding: 0.95rem 1rem;
   color: #991b1b;
+  box-shadow: 0 14px 32px rgba(153, 27, 27, 0.08);
 }
 
 .loginButton {
@@ -251,7 +249,7 @@
 
 @media (max-width: 640px) {
   .loginPage {
-    padding: 0.5rem 0.7rem 0.7rem;
+    padding: 0.85rem 0.9rem 1rem;
     overflow-y: auto;
   }
 
@@ -260,15 +258,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 1.2rem);
-    min-height: calc(100dvh - 1.2rem);
+    min-height: calc(100vh - 1.85rem);
+    min-height: calc(100dvh - 1.85rem);
     padding: 0.35rem 0;
   }
 
   .loginCard {
     width: min(100%, 29rem);
-    border-radius: 1.35rem;
-    padding: 1.05rem;
+    padding: 0.6rem 0;
   }
 
   .loginBrandImage {
