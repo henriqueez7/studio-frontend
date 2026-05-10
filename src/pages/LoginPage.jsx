@@ -67,7 +67,7 @@ export default function LoginPage() {
   };
 
   return (
-    <div className={styles.loginPage}>
+    <div className={`${styles.loginPage} ${styles.loginPageFixed}`}>
       <div className={styles.loginBackgroundGlow} />
 
       <div className={styles.loginGrid}>
