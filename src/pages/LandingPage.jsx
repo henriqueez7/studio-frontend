@@ -438,7 +438,7 @@ export default function LandingPage() {
             <motion.div variants={fadeUp}>
               <p className="landing-page__section-kicker">Experiência</p>
               <h2 className="landing-page__section-title landing-page__section-title--dark">
-                Menos informação solta. Mais clareza para agendar.
+                Uma experiência premium, clara e feita para agendar sem complicação.
               </h2>
             </motion.div>
           </div>
@@ -777,6 +777,3 @@ export default function LandingPage() {
     </div>
   );
 }
-
-
-
